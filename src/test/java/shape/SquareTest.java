@@ -15,7 +15,7 @@ class SquareTest {
 
     @Test
     void testSquareArea() {
-        assertEquals(16, square.area(), "Square area is wrong");
+        assertEquals(16, square.computeArea(), "Square area is wrong");
     }
 
     @Test

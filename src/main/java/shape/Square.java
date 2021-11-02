@@ -1,6 +1,6 @@
 package shape;
 
-public class Square implements AriaCalculatable {
+public class Square implements AreaCumputable {
     private int size;
 
     public Square(int size) {
@@ -8,7 +8,7 @@ public class Square implements AriaCalculatable {
     }
 
     @Override
-    public double area() {
+    public double computeArea() {
         return size * size;
     }
 

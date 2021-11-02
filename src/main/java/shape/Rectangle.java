@@ -1,6 +1,6 @@
 package shape;
 
-public class Rectangle implements AriaCalculatable {
+public class Rectangle implements AreaCumputable {
     private int width;
     private int height;
 
@@ -9,7 +9,7 @@ public class Rectangle implements AriaCalculatable {
         this.setHeight(height);
     }
 
-    public double area() {
+    public double computeArea() {
         return width * height;
     }
 

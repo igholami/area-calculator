@@ -15,7 +15,7 @@ class RectangleTest {
 
     @Test
     void testRectangleArea() {
-        assertEquals(20.0, rectangle.area(), "Rectangle area is wrong");
+        assertEquals(20.0, rectangle.computeArea(), "Rectangle area is wrong");
     }
 
     @Test
