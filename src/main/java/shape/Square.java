@@ -9,7 +9,7 @@ public class Square implements AriaCalculatable {
 
     @Override
     public double area() {
-        return 0;
+        return size * size;
     }
 
     public int getSize() {
@@ -17,6 +17,8 @@ public class Square implements AriaCalculatable {
     }
 
     public void setSize(int size) {
+        if (size <= 0)
+            throw new IllegalArgumentException("Size must be positive.");
         this.size = size;
     }
 }
