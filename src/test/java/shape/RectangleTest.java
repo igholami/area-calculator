@@ -15,7 +15,7 @@ class RectangleTest {
 
     @Test
     void testRectangleArea() {
-        assertEquals(20, rectangle.area(), "Rectangle area is wrong");
+        assertEquals(20.0, rectangle.area(), "Rectangle area is wrong");
     }
 
     @Test
@@ -48,14 +48,14 @@ class RectangleTest {
     void testHeightSetterWithNegativeValue() {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> rectangle.setHeight(-1),
                 "Rectangle width can not be negative");
-        assertEquals("Width must be positive.", exception.getMessage(), "Invalid message");
+        assertEquals("Hieght must be positive.", exception.getMessage(), "Invalid message");
     }
 
     @Test
     void testHeightSetterWithZeroValue() {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> rectangle.setHeight(0),
                 "Rectangle width can not be zero");
-        assertEquals("Width must be positive.", exception.getMessage(), "Invalid message");
+        assertEquals("Height must be positive.", exception.getMessage(), "Invalid message");
     }
 
 }

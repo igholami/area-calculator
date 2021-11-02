@@ -10,7 +10,7 @@ public class Rectangle implements AriaCalculatable {
     }
 
     public double area() {
-        return 0;
+        return width * height;
     }
 
     public double getWidth() {
@@ -18,6 +18,8 @@ public class Rectangle implements AriaCalculatable {
     }
 
     public void setWidth(int width) {
+        if (width <= 0)
+            throw new IllegalArgumentException("Width must be positive.");
         this.width = width;
     }
 
@@ -26,6 +28,8 @@ public class Rectangle implements AriaCalculatable {
     }
 
     public void setHeight(int height) {
+        if (height <= 0)
+            throw new IllegalArgumentException("Height must be positive.");
         this.height = height;
     }
 }
